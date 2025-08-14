@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu, Sayang ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" defer></script>
+</head>
+<body>
+  <!-- Canvas untuk Partikel 3D (Hati) -->
+  <div id="p5-canvas"></div>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="fade-in">Untuk <span id="lover-name">Sayangku</span>, yang selalu di hati 💖</h1>
+      <p class="fade-in delay-1">Setiap detik bersamamu adalah kenangan yang tak tergantikan.</p>
+      <button id="open-letter">Baca Surat Cintaku</button>
+      <button id="love-btn">I Love You! ❤️</button>
+    </section>
+
+    <!-- Anniversary Countdown -->
+    <section class="anniversary">
+      <h2>Our Special Day</h2>
+      <p id="next-anniversary">Loading...</p>
+      <div class="countdown" id="countdown">-</div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery">
+      <h2>Foto-Foto Kita</h2>
+      <div class="photo-grid">
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0003.jpg" alt="Foto 1"></div>
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0004.jpg" alt="Foto 2"></div>
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0005.jpg" alt="Foto 3"></div>
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0006.jpg" alt="Foto 4"></div>
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0007.jpg" alt="Foto 5"></div>
+        <div class="photo-item"><img src="Asset/image/IMG-20250814-WA0008.jpg" alt="Foto 6"></div>
+      </div>
+    </section>
+
+    <!-- Love Letter Modal -->
+    <div id="letter-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Surat Cinta Untukmu</h2>
+        <p>
+          Kamu tahu? Setiap kali aku melihat senyummu, dunia terasa lebih hangat. 
+          Aku bersyukur setiap hari karena kamu ada di hidupku. 
+          Dari hal kecil seperti candaan kita sampai momen-momen yang tak terlupakan, 
+          semuanya berarti bagiku. Aku mencintaimu lebih dari kata-kata bisa menggambarkan. 
+          Terima kasih telah menjadi cahaya di hari-hariku. ❤️
+        </p>
+        <p>Dari, <br><strong>Aku</strong> 💕</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio (Musik Latar) -->
+  <audio id="bg-music" loop>
+    <source src="Asset/music/Perfect-(Mr-Jat.in).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Script Utama -->
+  <script src="script.js"></script>
+</body>
+</html>
